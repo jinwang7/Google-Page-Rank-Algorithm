@@ -6,12 +6,6 @@ import sys
 """
 Below is code for the PageRank algorithm (power iteration).
 
-This code assumes that the node IDs start from 0 and are contiguous up to max_node_id.
-You are required to implement the functionality in the space provided.
-
-Because computing the adjacency matrix for large graph requires to load large graph dataset to
-computer memory, thus, in order to calculate the PageRank value of each node, you need to iterate
-over dataset multiple times and update the PageRank value based on equation mentioned in the question.
 """
 
 
@@ -69,7 +63,7 @@ class PageRank:
         pr_values = [1.0 / (self.max_node_id + 1)] * (self.max_node_id + 1)
         start_time = time.time()
         """
-        Step2: Implement pagerank algorithm as mentioned in lecture slides and the question.
+        Step2: Implement pagerank algorithm 
 
         Incoming Parameters:
             node_weights: Probability of each node to flyout during random walk
